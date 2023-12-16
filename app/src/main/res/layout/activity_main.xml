@@ -11,9 +11,10 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/start_button"
         android:background="@drawable/button_background"
         android:text="@string/start_button_text"
-        app:cornerRadius="20pt"
+        android:width="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
