@@ -22,12 +22,14 @@ class CategoryAdapter(private val context: CategoryListActivity, private val cat
         val view = convertView ?: layoutInflater.inflate(R.layout.item, parent, false)
 
         val textView = view.findViewById<TextView>(R.id.item_text)
-        textView.text = categories[position].category
+        val category = categories[position].category
+        textView.text = category
 
         val imageView = view.findViewById<ImageView>(R.id.item_image)
 
         imageView.setOnClickListener {
             val intent = Intent(context, RecipeListActivity::class.java)
+            intent.putExtra("category", category)
             context.startActivity(intent)
         }
         return view

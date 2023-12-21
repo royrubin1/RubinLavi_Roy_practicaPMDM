@@ -19,7 +19,7 @@ class RecipeListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.recipes_list)
-
+        val category = intent.getStringExtra("category")
         database = AppDatabase.getDatabase(applicationContext)
         progressBar = findViewById<ProgressBar>(R.id.loading_progess_bar)
         val recipeList = findViewById<RecyclerView>(R.id.recipe_list)
@@ -28,7 +28,7 @@ class RecipeListActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             showLoading(true)
-            val recipes = database.recipeDao().getAllRecipes()
+            val recipes = database.recipeDao().getCategoryRecipes(category!!)
             Log.d("DEBUG", "$recipes")
             runOnUiThread {
                 showLoading(false)

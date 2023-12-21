@@ -1,7 +1,6 @@
 package dam.islasfilipinas.rubinlavi_roy_practicapmdm.dao
 
 import androidx.room.Dao
-import androidx.room.Insert
 import androidx.room.Query
 import dam.islasfilipinas.rubinlavi_roy_practicapmdm.room.Category
 
@@ -9,7 +8,4 @@ import dam.islasfilipinas.rubinlavi_roy_practicapmdm.room.Category
 interface CategoryDAO {
     @Query("SELECT * FROM categories")
     suspend fun getAllCategories(): List<Category>
-
-    @Insert
-    suspend fun insertCategory(category: Category)
 }
