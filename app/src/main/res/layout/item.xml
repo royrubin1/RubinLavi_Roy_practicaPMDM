@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/chirstmas_cookies" />
+        android:src="@drawable/chirstmas_cookies"
+        android:contentDescription="@string/list_item" />
 
     <TextView
         android:id="@+id/item_text"
@@ -18,7 +19,7 @@
         android:layout_gravity="bottom"
         android:background="#66000000"
         android:gravity="center"
-        android:text="Category Title"
+        android:text="@string/category_title"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 </FrameLayout>

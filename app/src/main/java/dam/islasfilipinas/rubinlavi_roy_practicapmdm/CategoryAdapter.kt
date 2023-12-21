@@ -18,7 +18,7 @@ class CategoryAdapter(private val context: Context, private val categories: List
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val layoutInflater = LayoutInflater.from(context)
-        val view = convertView ?: layoutInflater.inflate(R.layout.category_item, parent, false)
+        val view = convertView ?: layoutInflater.inflate(R.layout.item, parent, false)
 
         val textView = view.findViewById<TextView>(R.id.item_text)
         textView.text = categories[position].category

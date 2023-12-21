@@ -27,7 +27,6 @@ abstract class AppDatabase : RoomDatabase() {
                 )
                     .addCallback(object : Callback() {
                         override fun onCreate(db: SupportSQLiteDatabase) {
-                            Log.d("AppDatabase", "Creating new database instance")
                             super.onCreate(db)
                             db.execSQL("INSERT INTO categories (category) VALUES ('Entradas');")
                             db.execSQL("INSERT INTO categories (category) VALUES ('Principales');")

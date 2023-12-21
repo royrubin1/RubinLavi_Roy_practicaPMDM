@@ -2,4 +2,6 @@
     <string name="app_name">RubinLavi_Roy_practicaPMDM</string>
     <string name="start_button_text">EMPEZAR</string>
     <string name="category_list_title">Categorías</string>
+    <string name="list_item">List Item</string>
+    <string name="category_title">Category Title</string>
 </resources>
