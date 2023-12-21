@@ -1,9 +1,10 @@
-package dam.islasfilipinas.rubinlavi_roy_practicapmdm
+package dam.islasfilipinas.rubinlavi_roy_practicapmdm.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import dam.islasfilipinas.rubinlavi_roy_practicapmdm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

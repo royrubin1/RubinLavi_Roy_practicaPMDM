@@ -1,4 +1,4 @@
-package dam.islasfilipinas.rubinlavi_roy_practicapmdm
+package dam.islasfilipinas.rubinlavi_roy_practicapmdm.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import dam.islasfilipinas.rubinlavi_roy_practicapmdm.R
+import dam.islasfilipinas.rubinlavi_roy_practicapmdm.activities.CategoryListActivity
+import dam.islasfilipinas.rubinlavi_roy_practicapmdm.activities.RecipeListActivity
 import dam.islasfilipinas.rubinlavi_roy_practicapmdm.room.Category
 
 class CategoryAdapter(private val context: CategoryListActivity, private val categories: List<Category>) : BaseAdapter() {
