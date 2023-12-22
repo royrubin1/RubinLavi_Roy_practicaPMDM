@@ -4,4 +4,5 @@
     <string name="category_list_title">Categorías</string>
     <string name="list_item">List Item</string>
     <string name="category_title">Category Title</string>
+    <string name="recipe_image">Recipe Image</string>
 </resources>

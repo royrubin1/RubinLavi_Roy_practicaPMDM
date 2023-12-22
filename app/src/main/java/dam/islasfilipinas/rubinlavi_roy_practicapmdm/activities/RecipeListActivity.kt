@@ -1,7 +1,6 @@
 package dam.islasfilipinas.rubinlavi_roy_practicapmdm.activities
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
@@ -31,10 +30,9 @@ class RecipeListActivity : AppCompatActivity() {
         lifecycleScope.launch {
             showLoading(true)
             val recipes = database.recipeDao().getCategoryRecipes(category!!)
-            Log.d("DEBUG", "$recipes")
             runOnUiThread {
                 showLoading(false)
-                recipeAdapter = RecipeAdapter(this@RecipeListActivity ,recipes)
+                recipeAdapter = RecipeAdapter(this@RecipeListActivity, recipes)
                 recipeList.adapter = recipeAdapter
             }
         }

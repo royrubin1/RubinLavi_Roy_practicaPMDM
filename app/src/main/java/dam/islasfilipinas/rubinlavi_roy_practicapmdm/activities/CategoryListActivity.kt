@@ -1,6 +1,5 @@
 package dam.islasfilipinas.rubinlavi_roy_practicapmdm.activities
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.GridView
 import android.widget.ProgressBar
@@ -28,7 +27,6 @@ class CategoryListActivity : AppCompatActivity() {
         lifecycleScope.launch {
             showLoading(true)
             val categories = database.categoryDao().getAllCategories()
-            Log.d("DEBUG", "$categories")
             runOnUiThread {
                 showLoading(false)
                 categoryAdapter = CategoryAdapter(this@CategoryListActivity, categories)

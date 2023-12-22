@@ -31,7 +31,7 @@ class RecipeAdapter(private val context: RecipeListActivity, private val recipes
 
         holder.imageView.load(recipe.imageUri) {
             crossfade(true)
-            error(R.drawable.error_placeholder) // Asegúrate de tener esta imagen en tus recursos.
+            error(R.drawable.error_placeholder)
         }
 
         holder.imageView.setOnClickListener {
